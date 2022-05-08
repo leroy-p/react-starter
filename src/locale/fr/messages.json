@@ -1,0 +1,6 @@
+{
+  "loading.title": "Chargement...",
+  "not-found.title": "Page non trouvée",
+  "root.title": "Accueil",
+  "{count, plural, =1 {language} other {languages}}": "Changer de {count, plural, =1 {langue} other {langues}}"
+}
