@@ -1,10 +1,5 @@
 import { createContext } from "react"
-import { ILangContextData } from "./hook"
-
-export enum Lang {
-  EN = 'en',
-  FR = 'fr',
-}
+import { ILangContextData, Lang } from "./hook"
 
 export const defaultLang = Lang.EN
 

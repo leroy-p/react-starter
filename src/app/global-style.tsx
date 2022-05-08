@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components"
-import { ThemeType } from "./theme"
+import { ITheme } from "./context/theme/hook"
 
-const GlobalStyle = createGlobalStyle<{ theme:ThemeType }>`
+const GlobalStyle = createGlobalStyle<{ theme: ITheme }>`
 * {
   box-sizing: border-box;
   margin: 0;

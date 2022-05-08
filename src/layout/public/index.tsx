@@ -22,6 +22,7 @@ function Layout(props: IProps) {
 }
 
 const Wrapper = styled.div`
+  background-color: ${({ theme }) => theme.palette.primary.main};
   min-height: 100vh;
   overflow-x: hidden;
   width: 100vw;

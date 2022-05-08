@@ -4,11 +4,11 @@ import { I18nProvider } from '@lingui/react'
 import { ThemeProvider } from 'styled-components'
 import { en, fr } from 'make-plural/plurals'
 
-import GlobalStyle from './theme/global-style'
-import Router from './router'
 import { catalogs } from '../locale/catalogs'
-import { theme } from './theme/theme'
 import { LangContext } from './context/lang'
+import { ThemeContext } from './context/theme'
+import GlobalStyle from './global-style'
+import Router from './router'
 
 i18n.load(catalogs)
 i18n.loadLocaleData('fr', { plurals: fr })
@@ -16,9 +16,9 @@ i18n.loadLocaleData('en', { plurals: en })
 
 function App() {
   const { lang } = useContext(LangContext)
+  const { theme } = useContext(ThemeContext)
 
   useEffect(() => {
-    console.log(lang)
     i18n.activate(lang)
   }, [lang])
 

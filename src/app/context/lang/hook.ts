@@ -1,5 +1,9 @@
 import { useState } from 'react'
-import { Lang } from '.'
+
+export enum Lang {
+  EN = 'en',
+  FR = 'fr',
+}
 
 export interface ILangContextData {
   lang: Lang
