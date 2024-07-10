@@ -1,6 +1,0 @@
-{
-  "loading.title": "Loading...",
-  "not-found.title": "Not found",
-  "root.title": "Home",
-  "{count, plural, =1 {language} other {languages}}": "Change {count, plural, =1 {language} other {languages}}"
-}

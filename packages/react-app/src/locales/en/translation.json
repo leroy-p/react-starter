@@ -1,0 +1,15 @@
+{
+  "loading": {
+    "title": "Loading..."
+  },
+  "not-found": {
+    "message": "Page not found.",
+    "page-title": "404",
+    "title": "404"
+  },
+  "root": {
+    "message": "This is the home page.",
+    "page-title": "Home",
+    "title": "Home"
+  }
+}

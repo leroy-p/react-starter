@@ -1,0 +1,15 @@
+{
+  "terminals": [
+    {
+      "name": "Root"
+    },
+    {
+      "name": "React app",
+      "cwd": "packages/react-app"
+    },
+    {
+      "name": "i18n - React app",
+      "cwd": "packages/react-app"
+    }
+  ]
+}

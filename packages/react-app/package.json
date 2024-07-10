@@ -1,0 +1,10 @@
+{
+  "name": "@react-starter/react-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "PORT=8080 react-scripts start",
+    "build": "react-scripts build",
+    "i18n:generate": "i18next 'src/**/*.{ts,tsx}' -c 'i18next-parser.config.js'"
+  }
+}

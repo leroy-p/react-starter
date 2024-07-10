@@ -1,0 +1,13 @@
+{
+  "extends": ["react-app"],
+  "rules": {
+    "no-await-in-loop": "warn",
+    "no-dupe-else-if": "error",
+    "no-setter-return": "error",
+    "require-atomic-updates": "error",
+    "block-scoped-var": "error",
+    "require-await": "error",
+    "no-unneeded-ternary": "error",
+    "react/jsx-sort-props": "error"
+  }
+}

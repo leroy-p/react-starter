@@ -1,0 +1,15 @@
+{
+  "loading": {
+    "title": "Chargement..."
+  },
+  "not-found": {
+    "message": "Page non trouvée.",
+    "page-title": "404",
+    "title": "404"
+  },
+  "root": {
+    "message": "Ceci est la page d'accueil.",
+    "page-title": "Accueil",
+    "title": "Accueil"
+  }
+}
