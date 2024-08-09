@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the root directory, run `npm install`\
-Create a new file named `.env` and copy `.env.example` content in it.\
+Create in the package directory (`/packages/react-app`) a new file named `.env` and copy `.env.example` content in it.
 
 In the package directory (`/packages/react-app`), you can run:
 
