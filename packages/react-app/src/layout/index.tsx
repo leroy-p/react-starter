@@ -7,7 +7,7 @@ import Main from './main'
 import Footer from './footer'
 
 interface IProps {
-  children: JSX.Element
+  children: React.ReactNode
 }
 
 export default function Layout({ children }: IProps) {

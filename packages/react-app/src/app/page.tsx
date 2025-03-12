@@ -4,7 +4,7 @@ import { useI18n } from '../hooks/use-i18n'
 export const APP_NAME = 'React Starter'
 
 interface IProps {
-  children: JSX.Element
+  children: React.ReactNode
   pageKey?: string
 }
 

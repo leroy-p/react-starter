@@ -8,7 +8,7 @@ import Root from '../pages/root'
 import Page from './page'
 
 interface IRouteParams {
-  component: JSX.Element
+  component: React.ReactNode
   path: RoutePath
   pageKey?: string
 }

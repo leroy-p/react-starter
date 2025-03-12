@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 interface IProps {
-  children: JSX.Element
+  children: React.ReactNode
 }
 
 export default function Main({ children }: IProps) {
