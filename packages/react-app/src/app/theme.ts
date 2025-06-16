@@ -1,27 +1,15 @@
 export interface ITheme {
   palette: {
-    primary: {
-      main: string
-    }
-    secondary: {
-      main: string
-    }
-    error: {
-      main: string
-    }
+    primary: string
+    secondary: string
+    error: string
   }
 }
 
 export const theme: ITheme = {
   palette: {
-    primary: {
-      main: '#ffffff',
-    },
-    secondary: {
-      main: '#000000',
-    },
-    error: {
-      main: '#ff0000',
-    },
+    primary: '#ffffff',
+    secondary: '#000000',
+    error: '#ff0000',
   },
 }

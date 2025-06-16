@@ -1,5 +1,5 @@
 {
-  "extends": "../../tsconfig",
-  "include": ["src", "index.d.ts"],
-  "exclude": ["node_modules"]
+  "extends": "../../tsconfig.json",
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }

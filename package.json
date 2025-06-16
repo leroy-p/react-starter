@@ -2,29 +2,33 @@
   "name": "react-starter",
   "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "i18next": "24.2.2",
-    "i18next-browser-languagedetector": "8.0.4",
-    "i18next-parser": "9.3.0",
-    "react": "19.0.0",
-    "react-div-100vh": "0.7.0",
-    "react-dom": "19.0.0",
-    "react-helmet": "6.1.0",
-    "react-i18next": "15.4.1",
-    "react-router-dom": "7.3.0",
-    "react-scripts": "5.0.1",
-    "styled-components": "6.1.15",
-    "typescript": "5.8.2"
+  "scripts": {
+    "format": "biome check --write"
   },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
-    "@types/node": "22.13.10",
-    "@types/react": "19.0.10",
-    "@types/react-dom": "19.0.4",
-    "@types/react-helmet": "6.1.11"
+  "dependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/node": "24.0.3",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "@types/react-helmet": "6.1.11",
+    "@vitejs/plugin-react": "4.5.2",
+    "i18next": "25.2.1",
+    "i18next-browser-languagedetector": "8.2.0",
+    "i18next-parser": "9.3.0",
+    "react": "19.1.0",
+    "react-div-100vh": "0.7.0",
+    "react-dom": "19.1.0",
+    "react-helmet": "6.1.0",
+    "react-i18next": "15.5.3",
+    "react-router-dom": "7.6.2",
+    "react-scripts": "5.0.1",
+    "styled-components": "6.1.19",
+    "typescript": "5.8.3",
+    "vite": "6.3.5",
+    "vite-tsconfig-paths": "5.1.4"
   },
   "overrides": {
-    "typescript": "5.8.2"
+    "typescript": "5.8.3"
   },
   "browserslist": {
     "production": [

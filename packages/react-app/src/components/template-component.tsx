@@ -1,9 +1,8 @@
-import React from 'react'
 import styled from 'styled-components'
 
 interface IProps {}
 
-export default function TemplateComponent(props: IProps) {
+export default function TemplateComponent(_props: IProps) {
   return <Container></Container>
 }
 
