@@ -1,0 +1,41 @@
+name: Deploy react-starter to Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: main
+
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Vite project
+        run: npm run build:react-app
+
+      - name: Install wrangler
+        run: npm install -g wrangler
+
+      - name: Deploy Cloudflare Page
+        working-directory: packages/react-app
+        run: |
+          if ! npx wrangler pages project list | grep -qw "react-starter"; then
+            npx wrangler pages project create react-starter --production-branch=${{ github.ref_name }}
+          fi
+            npx wrangler pages deploy dist --project-name=react-starter --branch=${{ github.ref_name }}
