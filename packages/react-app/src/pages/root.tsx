@@ -1,8 +1,7 @@
 import styled from 'styled-components'
-
+import logo from '../assets/images/logo512.png'
 import { useI18n } from '../hooks/use-i18n'
 import Layout from '../layout'
-import logo from '../assets/images/logo512.png'
 
 export default function Root() {
   const { t } = useI18n()
