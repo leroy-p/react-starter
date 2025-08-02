@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-
 import { useI18n } from '../hooks/use-i18n'
 
 export const APP_NAME = 'React Starter'

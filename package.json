@@ -24,9 +24,10 @@
     "react-i18next": "15.6.1",
     "react-router-dom": "7.7.1",
     "styled-components": "6.1.19",
-    "typescript": "5.8.3",
+    "typescript": "5.9.2",
     "vite": "7.0.6",
-    "vite-tsconfig-paths": "5.1.4"
+    "vite-tsconfig-paths": "5.1.4",
+    "wrangler": "4.27.0"
   },
   "browserslist": {
     "production": [

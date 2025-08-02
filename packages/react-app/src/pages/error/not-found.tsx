@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import { useI18n } from '../../hooks/use-i18n'
 import Layout from '../../layout'
 

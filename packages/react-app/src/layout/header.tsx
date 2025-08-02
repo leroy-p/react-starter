@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import { APP_NAME } from '../app/page'
 
 export default function Header() {

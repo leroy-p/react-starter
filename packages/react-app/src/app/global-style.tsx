@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
-
-import { ITheme } from './theme'
 import shortStack from '../assets/fonts/ShortStack-Regular.ttf'
+import { ITheme } from './theme'
 
 const GlobalStyle = createGlobalStyle<{ theme: ITheme }>`
   @font-face {
