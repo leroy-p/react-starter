@@ -26,6 +26,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Force install Rollup binary for Linux
+        working-directory: packages/react-app
+        run: npm install @rollup/rollup-linux-x64-gnu --ignore-scripts --no-save
+
       - name: Build Vite project
         run: npm run build:react-app
 
