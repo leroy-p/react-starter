@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "target": "esnext",
+    "moduleResolution": "bundler",
+    "module": "esnext",
+    "types": ["vite/client"],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
