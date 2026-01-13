@@ -1,8 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 import shortStack from '../assets/fonts/ShortStack-Regular.ttf'
-import { ITheme } from './theme'
 
-const GlobalStyle = createGlobalStyle<{ theme: ITheme }>`
+const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: "ShortStack";
     src: url("${shortStack}");
@@ -22,7 +21,6 @@ const GlobalStyle = createGlobalStyle<{ theme: ITheme }>`
 
   h1, h2, h3, h4, h5, h6, p {
     color: ${({ theme }) => theme.palette.primary};
-    font-family: 'ShortStack', sans-serif;
     letter-spacing: normal;
     line-height: normal;
     margin: 0;
@@ -34,7 +32,6 @@ const GlobalStyle = createGlobalStyle<{ theme: ITheme }>`
 
   a {
     cursor: pointer;
-    font-family: 'ShortStack', sans-serif;
     text-decoration: none;
 
     &:hover {
@@ -47,7 +44,6 @@ const GlobalStyle = createGlobalStyle<{ theme: ITheme }>`
     border: none;
     color: ${({ theme }) => theme.palette.primary};
     cursor: pointer;
-    font-family: 'ShortStack', sans-serif;
     outline:none;
     padding: 0;
 
