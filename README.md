@@ -62,3 +62,17 @@ npm run i18n:generate
 ```
 
 This runs `i18next-cli` with `packages/react-app/i18next.config.ts`.
+
+## Tests
+
+Use the `React app` terminal (`cwd: packages/react-app`):
+
+```bash
+npm run test
+```
+
+Watch mode:
+
+```bash
+npm run test:watch
+```
