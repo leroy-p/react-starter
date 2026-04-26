@@ -10,6 +10,7 @@
   "root": {
     "message": "Ceci est la page d'accueil.",
     "page-title": "Accueil",
-    "title": "Accueil"
+    "title": "Accueil",
+    "title1": "::root.title1"
   }
 }

@@ -3,40 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build:react-app": "vite build --config packages/react-app/vite.config.ts",
-    "format": "biome check --write"
-  },
-  "dependencies": {
-    "@biomejs/biome": "2.3.11",
-    "@types/node": "24.10.2",
-    "@types/react": "19.2.8",
-    "@types/react-dom": "19.2.3",
-    "@vitejs/plugin-react": "5.1.2",
-    "i18next": "25.7.4",
-    "i18next-browser-languagedetector": "8.2.0",
-    "i18next-parser": "9.3.0",
-    "react": "19.2.3",
-    "react-div-100vh": "0.7.0",
-    "react-dom": "19.2.3",
-    "react-i18next": "16.5.2",
-    "react-router-dom": "7.12.0",
-    "styled-components": "6.3.5",
-    "typescript": "5.9.3",
-    "vite": "7.3.1",
-    "vite-tsconfig-paths": "6.0.4",
-    "wrangler": "4.58.0"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "build:react-app": "npm run build --workspace @react-starter/react-app",
+    "format": "npm exec --workspace @react-starter/react-app biome check --write ."
   },
   "workspaces": [
     "packages/react-app"

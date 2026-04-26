@@ -1,5 +1,5 @@
 const common = {
-  isLocal: process.env.VITE_APP_ENV === 'local',
+  isLocal: import.meta.env.VITE_APP_ENV === 'local',
 }
 
 export const appEnv = { ...common }
