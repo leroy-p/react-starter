@@ -1,25 +1,64 @@
-# Getting Started with React Starter
+# React Starter
 
-This project uses React, Typescript, Vite, Biome, Styled Components.
+Template repository for React projects using:
+- React + TypeScript
+- Vite
+- Styled Components
+- Biome
+- i18next + i18next-cli
 
-## Available Scripts
+## Requirements
 
-### In the `root` directory:
+- Node.js version from `.node-version`
+- npm `>=10`
 
-#### `npm install`
+## Project Structure
 
-Installs all the dependencies needed.
+- Root: monorepo workspace orchestration
+- App package: `packages/react-app`
 
-### In the `packages/react-app` folder:
+## Install
 
-#### `npm run dev`
+Use the `Root` terminal:
 
-Runs the app in the development mode.\
-Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
+```bash
+npm install
+```
 
-The page will reload if you make edits.
+## Run the App
 
-#### `npm run build`
+Use the `React app` terminal (`cwd: packages/react-app`):
 
-Builds the app for production to the `dist` folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm run dev
+```
+
+App runs on `http://localhost:8080`.
+
+## Build
+
+Use the `Root` terminal:
+
+```bash
+npm run build:react-app
+```
+
+Build output: `packages/react-app/dist`.
+
+## Formatting
+
+Use the `Root` terminal:
+
+```bash
+npm run format
+```
+
+## i18n Extraction
+
+Use the `i18n - React app` terminal (`cwd: packages/react-app`):
+
+```bash
+npm run i18n:generate
+```
+
+This runs `i18next-cli` with `packages/react-app/i18next.config.ts`.
