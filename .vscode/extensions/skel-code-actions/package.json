@@ -1,0 +1,28 @@
+{
+  "activationEvents": ["onLanguage:javascript", "onLanguage:javascriptreact", "onLanguage:typescript", "onLanguage:typescriptreact"],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": false
+    }
+  },
+  "categories": ["Formatters"],
+  "contributes": {
+    "commands": [
+      {
+        "command": "skelCodeActions.fixDocument",
+        "title": "Skel: Apply Code Spacing"
+      }
+    ]
+  },
+  "description": "Workspace-local code actions for Skel formatting rules that Biome cannot enforce.",
+  "displayName": "Skel Code Actions",
+  "engines": {
+    "vscode": "^1.118.0"
+  },
+  "extensionKind": ["workspace"],
+  "license": "UNLICENSED",
+  "main": "./extension.js",
+  "name": "skel-code-actions",
+  "publisher": "jiroko",
+  "version": "0.0.1"
+}
