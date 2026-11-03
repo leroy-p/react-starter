@@ -7,7 +7,7 @@
   },
   "scripts": {
     "build:react-app": "npm run build --workspace @react-starter/react-app",
-    "format": "npm exec --workspace @react-starter/react-app biome check --write ."
+    "format": "npm exec --workspace @react-starter/react-app -- biome check --write ."
   },
   "workspaces": [
     "packages/react-app"
