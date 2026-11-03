@@ -9,7 +9,7 @@ Template repository for React projects using:
 
 ## Requirements
 
-- Node.js version from `.node-version`
+- Node.js 26 LTS (exact version in `.node-version`, also used by GitHub Actions)
 - npm `>=10`
 
 ## Project Structure
